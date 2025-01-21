@@ -1,8 +1,18 @@
-
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import SOSButton from "../Components/SOSButton";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      alert("Please log in to access this page.");
+      navigate("/login");
+    }
+  }, [navigate]);
+
   const sendSOS = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(

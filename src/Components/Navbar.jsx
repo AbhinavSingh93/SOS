@@ -14,8 +14,9 @@ const Navbar = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
     navigate("/");
+    window.location.reload(); // Clear browser cache
   };
-
+  
   if (excludedPaths.includes(location.pathname)) {
     return null;
   }
