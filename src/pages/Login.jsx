@@ -21,7 +21,9 @@ const Login = () => {
       const data = await response.json();
       if (response.ok) {
         alert("Login successful!");
-        navigate("/");// Redirect to your dashboard or home
+        localStorage.setItem("token", data.token);
+        localStorage.setItem("user", JSON.stringify(data.user));
+        navigate("/home");// Redirect to your dashboard or home
       } else {
         alert(data.message);
       }

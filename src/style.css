@@ -34,6 +34,44 @@ body {
   text-decoration: underline;
 }
 
+/* User Menu Styles */
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-menu span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.user-menu .logout-button {
+  background-color: #e74c3c; /* Softer red for a modern look */
+  color: #fff; /* White text for contrast */
+  padding: 0.6rem 1.2rem; /* Slightly larger padding for better spacing */
+  border: none; /* No border for a clean design */
+  border-radius: 8px; /* Subtle rounded corners for a smoother look */
+  font-size: 1rem; /* Standardized font size */
+  font-weight: bold; /* Bold text to make it more prominent */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.3s ease; /* Smooth transitions for interactivity */
+}
+
+.user-menu .logout-button:hover {
+  background-color: #c0392b; /* Darker red for hover effect */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover for a lifted look */
+}
+
+.user-menu .logout-button:active {
+  background-color: #a93226; /* Even darker red for click effect */
+  transform: scale(0.98); /* Slightly shrink the button for a "pressing" effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Softer shadow for a pressed look */
+}
+
 /* Home Page */
 .home-page {
   text-align: center;
