@@ -5,7 +5,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <h2>Nearby Alerts</h2>
-      <p>View real-time SOS alerts on the map:</p>
+      <p>View real-time Location on the map:</p>
       <MapView />
     </div>
   );

@@ -26,7 +26,7 @@ const SOSPage = () => {
           </div>
           <div className="feature">
             <h3>Geo-Location Tracking</h3>
-            <p>Share your location with your current location peoples's during emergencies for quick assistance.</p>
+            <p>Share your location with your nearby peoples's during emergencies for quick assistance.</p>
           </div>
           <div className="feature">
             <h3>24/7 Support</h3>
